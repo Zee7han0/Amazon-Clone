@@ -8,7 +8,7 @@ import {renderPaymentSummary} from './paymentSummary.js';
 function updateCheckoutHeader() {
   const quantity = totalCartQuantity();
   document.querySelector('.js-cart-quantity').innerHTML = `Checkout (<a class="return-to-home-link"
-          href="amazon.html">${quantity} items</a>)`
+          href="index.html">${quantity} items</a>)`
 }
 
 
