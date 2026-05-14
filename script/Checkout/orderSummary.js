@@ -19,7 +19,7 @@ export function renderOrderSummary() {
   if (cart.length === 0) {
     document.querySelector('.js-order-summary').innerHTML = `
       <div>Your cart is empty!</div>
-      <a href="amazon.html">Browse products</a>
+      <a href="index.html">Browse products</a>
     `;
     return;
   }
@@ -73,9 +73,6 @@ export function renderOrderSummary() {
           <div class="product-quantity">
             <span>
               Quantity: <span class="quantity-label">${cartItem.quantity}</span>
-            </span>
-            <span class="update-quantity-link link-primary">
-              Update
             </span>
             <span class="delete-quantity-link link-primary js-delete-from-cart" data-product-id="${matchingProduct.id}">
               Delete
